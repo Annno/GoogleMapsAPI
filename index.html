@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GoogleMap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAioAEkzSMStW9QvPZMSwP9t5VoWoAM2NI&callback=initMap" async defer></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="input-field col s4">
+                <input id="longitude" type="text" class="validate">
+                <label for="longitude">Longitude</label>
+            </div>
+            <div class="input-field col s4">
+                <input id="latitude" type="text" class="validate">
+                <label for="latitude">Latitude</label>
+            </div>
+            <div class="col s3"><a class="waves-effect waves-light btn pMarker">Place Marker</a></div>
+        </div>
+        <div class="row header">
+            <div class="input-field col s4">
+                <input id="message" type="text" class="validate">
+                <label for="message">Marker message</label>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map"></div>
+        </div>
+    </div>
+</body>
+
+</html>
